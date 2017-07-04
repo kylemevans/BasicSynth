@@ -1,0 +1,494 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22189,        486]
+NotebookOptionsPosition[     21865,        470]
+NotebookOutlinePosition[     22212,        485]
+CellTagsIndexPosition[     22169,        482]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+     RowBox[{"Play", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"aT", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"2", "\[Pi]", "*", "TremFreq", "*", "x"}], "]"}]}]}], 
+         ")"}], "*", "\[IndentingNewLine]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"a1", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "1", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v1", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase1"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "2", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v2", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase2"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "3", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v3", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase3"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "4", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v4", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase4"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "5", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v5", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase5"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "6", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v6", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase6"}], "]"}]}], " ", "+", "\[IndentingNewLine]", 
+          RowBox[{"a7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "\[Pi]", "*", "7", "x", "*", "ToneFreqSlider"}], 
+             "+", 
+             RowBox[{"v7", "*", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"2", "\[Pi]", "*", "VibrFreq", "*", "x"}], "]"}]}], 
+             "+", "phase7"}], "]"}]}]}], ")"}]}], ",", " ", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "1."}], "}"}]}], "]"}], "]"}], ",", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"ToneFreqSlider", ",", "220", ",", "\"\<Tone Frequency\>\""}], 
+       "}"}], ",", "0", ",", "2000", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a1", ",", "1", ",", "\"\<Harmonic Amplitude - n=1\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a2", ",", "1", ",", "\"\<Harmonic Amplitude - n=2\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a3", ",", "1", ",", "\"\<Harmonic Amplitude - n=3\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a4", ",", "1", ",", "\"\<Harmonic Amplitude - n=4\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a5", ",", "1", ",", "\"\<Harmonic Amplitude - n=5\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a6", ",", "1", ",", "\"\<Harmonic Amplitude - n=6\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a7", ",", "1", ",", "\"\<Harmonic Amplitude - n=7\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"VibrFreq", ",", "0", ",", "\"\<Vibrato Frequency\>\""}], 
+       "}"}], ",", "0", ",", "10", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v1", ",", "1", ",", "\"\<Vibrato Amplitude - n=1\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v2", ",", "1", ",", "\"\<Vibrato Amplitude - n=2\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v3", ",", "1", ",", "\"\<Vibrato Amplitude - n=3\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v4", ",", "1", ",", "\"\<Vibrato Amplitude - n=4\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v5", ",", "1", ",", "\"\<Vibrato Amplitude - n=5\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v6", ",", "1", ",", "\"\<Vibrato Amplitude - n=6\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"v7", ",", "1", ",", "\"\<Vibrato Amplitude - n=7\>\""}], 
+       "}"}], ",", "0", ",", "2", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"aT", ",", "0", ",", "\"\<Tremolo Amplitude\>\""}], "}"}], ",",
+       "0", ",", "1", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"TremFreq", ",", "0", ",", "\"\<Tremolo Frequency\>\""}], 
+       "}"}], ",", "0", ",", "10", ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", "Delimiter", ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase1", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase2", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase3", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase4", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase5", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase6", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"phase7", ",", 
+      RowBox[{
+       RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+      RowBox[{"2", "\[Pi]"}], ",", " ", 
+      RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+     "}"}]}], "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.679803370265698*^9, 3.679803540514436*^9}, {
+   3.679803618875918*^9, 3.6798037783150373`*^9}, {3.679803819691404*^9, 
+   3.6798038405945997`*^9}, {3.6798039737472153`*^9, 3.679804257827464*^9}, {
+   3.679804459958025*^9, 3.6798044633632193`*^9}, {3.679804612195732*^9, 
+   3.679804674171277*^9}, {3.6798051455472383`*^9, 3.6798052380675306`*^9}, {
+   3.6798857419451675`*^9, 3.679885774749044*^9}, 3.679885808562978*^9, {
+   3.680030084567403*^9, 3.6800300854108047`*^9}, 3.6800301602903557`*^9, {
+   3.680197471372093*^9, 3.680197474617899*^9}, {3.680197532231209*^9, 
+   3.6801975332628107`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a1$$ = 1, $CellContext`a2$$ = 
+    1, $CellContext`a3$$ = 1, $CellContext`a4$$ = 1, $CellContext`a5$$ = 
+    1, $CellContext`a6$$ = 1, $CellContext`a7$$ = 1, $CellContext`aT$$ = 
+    0, $CellContext`phase1$$ = 0., $CellContext`phase2$$ = 
+    4.373096973796992, $CellContext`phase3$$ = -3.744778443079033, \
+$CellContext`phase4$$ = (-2) Pi, $CellContext`phase5$$ = 
+    3.8453094079939074`, $CellContext`phase6$$ = 
+    1.1309733552923253`, $CellContext`phase7$$ = -2.060884780754904, \
+$CellContext`ToneFreqSlider$$ = 220, $CellContext`TremFreq$$ = 
+    0, $CellContext`v1$$ = 1, $CellContext`v2$$ = 1, $CellContext`v3$$ = 
+    1, $CellContext`v4$$ = 1, $CellContext`v5$$ = 1, $CellContext`v6$$ = 
+    1, $CellContext`v7$$ = 1, $CellContext`VibrFreq$$ = 0, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`ToneFreqSlider$$], 220, "Tone Frequency"}, 0, 
+      2000}, {{
+       Hold[$CellContext`a1$$], 1, "Harmonic Amplitude - n=1"}, 0, 2}, {{
+       Hold[$CellContext`a2$$], 1, "Harmonic Amplitude - n=2"}, 0, 2}, {{
+       Hold[$CellContext`a3$$], 1, "Harmonic Amplitude - n=3"}, 0, 2}, {{
+       Hold[$CellContext`a4$$], 1, "Harmonic Amplitude - n=4"}, 0, 2}, {{
+       Hold[$CellContext`a5$$], 1, "Harmonic Amplitude - n=5"}, 0, 2}, {{
+       Hold[$CellContext`a6$$], 1, "Harmonic Amplitude - n=6"}, 0, 2}, {{
+       Hold[$CellContext`a7$$], 1, "Harmonic Amplitude - n=7"}, 0, 2}, {{
+       Hold[$CellContext`VibrFreq$$], 0, "Vibrato Frequency"}, 0, 10}, {{
+       Hold[$CellContext`v1$$], 1, "Vibrato Amplitude - n=1"}, 0, 2}, {{
+       Hold[$CellContext`v2$$], 1, "Vibrato Amplitude - n=2"}, 0, 2}, {{
+       Hold[$CellContext`v3$$], 1, "Vibrato Amplitude - n=3"}, 0, 2}, {{
+       Hold[$CellContext`v4$$], 1, "Vibrato Amplitude - n=4"}, 0, 2}, {{
+       Hold[$CellContext`v5$$], 1, "Vibrato Amplitude - n=5"}, 0, 2}, {{
+       Hold[$CellContext`v6$$], 1, "Vibrato Amplitude - n=6"}, 0, 2}, {{
+       Hold[$CellContext`v7$$], 1, "Vibrato Amplitude - n=7"}, 0, 2}, {{
+       Hold[$CellContext`aT$$], 0, "Tremolo Amplitude"}, 0, 1}, {{
+       Hold[$CellContext`TremFreq$$], 0, "Tremolo Frequency"}, 0, 10}, {
+      Hold[$CellContext`phase1$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase2$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase3$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase4$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase5$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase6$$], (-2) Pi, 2 Pi}, {
+      Hold[$CellContext`phase7$$], (-2) Pi, 2 Pi}}, Typeset`size$$ = {
+    250., {54., 61.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`ToneFreqSlider$1048$$ = 
+    0, $CellContext`a1$1049$$ = 0, $CellContext`a2$1050$$ = 
+    0, $CellContext`a3$1051$$ = 0, $CellContext`a4$1052$$ = 
+    0, $CellContext`a5$1053$$ = 0, $CellContext`a6$1054$$ = 
+    0, $CellContext`a7$1055$$ = 0, $CellContext`VibrFreq$1056$$ = 
+    0, $CellContext`v1$1057$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a1$$ = 1, $CellContext`a2$$ = 
+        1, $CellContext`a3$$ = 1, $CellContext`a4$$ = 1, $CellContext`a5$$ = 
+        1, $CellContext`a6$$ = 1, $CellContext`a7$$ = 1, $CellContext`aT$$ = 
+        0, $CellContext`phase1$$ = (-2) Pi, $CellContext`phase2$$ = (-2) 
+         Pi, $CellContext`phase3$$ = (-2) Pi, $CellContext`phase4$$ = (-2) 
+         Pi, $CellContext`phase5$$ = (-2) Pi, $CellContext`phase6$$ = (-2) 
+         Pi, $CellContext`phase7$$ = (-2) Pi, $CellContext`ToneFreqSlider$$ = 
+        220, $CellContext`TremFreq$$ = 0, $CellContext`v1$$ = 
+        1, $CellContext`v2$$ = 1, $CellContext`v3$$ = 1, $CellContext`v4$$ = 
+        1, $CellContext`v5$$ = 1, $CellContext`v6$$ = 1, $CellContext`v7$$ = 
+        1, $CellContext`VibrFreq$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`ToneFreqSlider$$, \
+$CellContext`ToneFreqSlider$1048$$, 0], 
+        Hold[$CellContext`a1$$, $CellContext`a1$1049$$, 0], 
+        Hold[$CellContext`a2$$, $CellContext`a2$1050$$, 0], 
+        Hold[$CellContext`a3$$, $CellContext`a3$1051$$, 0], 
+        Hold[$CellContext`a4$$, $CellContext`a4$1052$$, 0], 
+        Hold[$CellContext`a5$$, $CellContext`a5$1053$$, 0], 
+        Hold[$CellContext`a6$$, $CellContext`a6$1054$$, 0], 
+        Hold[$CellContext`a7$$, $CellContext`a7$1055$$, 0], 
+        Hold[$CellContext`VibrFreq$$, $CellContext`VibrFreq$1056$$, 0], 
+        Hold[$CellContext`v1$$, $CellContext`v1$1057$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Dynamic[
+        Play[(1 - $CellContext`aT$$ 
+          Sin[((2 Pi) $CellContext`TremFreq$$) $CellContext`x]) \
+($CellContext`a1$$ 
+           Sin[(((2 Pi) 
+                1) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v1$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase1$$] + $CellContext`a2$$ 
+           Sin[(((2 Pi) 
+                2) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v2$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase2$$] + $CellContext`a3$$ 
+           Sin[(((2 Pi) 
+                3) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v3$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase3$$] + $CellContext`a4$$ 
+           Sin[(((2 Pi) 
+                4) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v4$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase4$$] + $CellContext`a5$$ 
+           Sin[(((2 Pi) 
+                5) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v5$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase5$$] + $CellContext`a6$$ 
+           Sin[(((2 Pi) 
+                6) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v6$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase6$$] + $CellContext`a7$$ 
+           Sin[(((2 Pi) 
+                7) $CellContext`x) $CellContext`ToneFreqSlider$$ + \
+$CellContext`v7$$ 
+              Sin[((2 Pi) $CellContext`VibrFreq$$) $CellContext`x] + \
+$CellContext`phase7$$]), {$CellContext`x, 0, 1.}]], 
+      "Specifications" :> {{{$CellContext`ToneFreqSlider$$, 220, 
+          "Tone Frequency"}, 0, 2000, Appearance -> "Labeled"}, 
+        Delimiter, {{$CellContext`a1$$, 1, "Harmonic Amplitude - n=1"}, 0, 2, 
+         Appearance -> 
+         "Labeled"}, {{$CellContext`a2$$, 1, "Harmonic Amplitude - n=2"}, 0, 
+         2, Appearance -> 
+         "Labeled"}, {{$CellContext`a3$$, 1, "Harmonic Amplitude - n=3"}, 0, 
+         2, Appearance -> 
+         "Labeled"}, {{$CellContext`a4$$, 1, "Harmonic Amplitude - n=4"}, 0, 
+         2, Appearance -> 
+         "Labeled"}, {{$CellContext`a5$$, 1, "Harmonic Amplitude - n=5"}, 0, 
+         2, Appearance -> 
+         "Labeled"}, {{$CellContext`a6$$, 1, "Harmonic Amplitude - n=6"}, 0, 
+         2, Appearance -> 
+         "Labeled"}, {{$CellContext`a7$$, 1, "Harmonic Amplitude - n=7"}, 0, 
+         2, Appearance -> "Labeled"}, 
+        Delimiter, {{$CellContext`VibrFreq$$, 0, "Vibrato Frequency"}, 0, 10, 
+         Appearance -> "Labeled"}, 
+        Delimiter, {{$CellContext`v1$$, 1, "Vibrato Amplitude - n=1"}, 0, 2, 
+         Appearance -> 
+         "Labeled"}, {{$CellContext`v2$$, 1, "Vibrato Amplitude - n=2"}, 0, 2,
+          Appearance -> 
+         "Labeled"}, {{$CellContext`v3$$, 1, "Vibrato Amplitude - n=3"}, 0, 2,
+          Appearance -> 
+         "Labeled"}, {{$CellContext`v4$$, 1, "Vibrato Amplitude - n=4"}, 0, 2,
+          Appearance -> 
+         "Labeled"}, {{$CellContext`v5$$, 1, "Vibrato Amplitude - n=5"}, 0, 2,
+          Appearance -> 
+         "Labeled"}, {{$CellContext`v6$$, 1, "Vibrato Amplitude - n=6"}, 0, 2,
+          Appearance -> 
+         "Labeled"}, {{$CellContext`v7$$, 1, "Vibrato Amplitude - n=7"}, 0, 2,
+          Appearance -> "Labeled"}, 
+        Delimiter, {{$CellContext`aT$$, 0, "Tremolo Amplitude"}, 0, 1, 
+         Appearance -> "Labeled"}, 
+        Delimiter, {{$CellContext`TremFreq$$, 0, "Tremolo Frequency"}, 0, 10, 
+         Appearance -> "Labeled"}, 
+        Delimiter, {$CellContext`phase1$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase2$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase3$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase4$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase5$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase6$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}, {$CellContext`phase7$$, (-2) Pi, 2 Pi, Appearance -> 
+         "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{712., {408., 415.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.679804429148263*^9, 3.6798044657173543`*^9, 
+  3.679804621056239*^9, 3.679804675040327*^9, 3.6798052387835712`*^9, 
+  3.679885781486429*^9, 3.679885822897798*^9, 3.680007145953096*^9, 
+  3.680030094599824*^9, 3.6800301709981775`*^9, 3.680197486273921*^9, 
+  3.6801975397588234`*^9}]
+}, Open  ]]
+},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (February 25, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 11271, 266, 932, "Input"],
+Cell[11854, 290, 9995, 177, 840, "Output"]
+}, Open  ]]
+}
+]
+*)
+
